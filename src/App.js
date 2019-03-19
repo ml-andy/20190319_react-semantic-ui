@@ -1,6 +1,5 @@
 import React from 'react';
 import { Header, Image, Modal } from 'semantic-ui-react'
-import logo from './logo.svg';
 import 'semantic-ui-css/semantic.min.css'
 import './App.css';
 import { HorizontalBar } from 'react-chartjs-2';
@@ -41,7 +40,7 @@ class App extends React.PureComponent {
         >
           <Modal.Header>Select a Photo</Modal.Header>
           <Modal.Content image>
-            <Image wrapped size='medium' src={logo} />
+            <Image wrapped size='medium' src="https://cdn-images-1.medium.com/max/2400/1*K0a7xINk0RM5gfXGSN68cw.png" />
             <Modal.Description>
               <Header>{ this.state.target.name }</Header>
               <p>index: { this.state.target.index }</p>
